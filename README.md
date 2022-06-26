@@ -1,10 +1,11 @@
-# MernStack
-Mern Stack project for learning
+
 
 # MernStack
 Mern Stack Application
 
 **Clone Github project and Create Nodejs Application and Push to github**
+
+**create one new repository in github**
 1. **in cmd to goto the code  location**
 
 cd "Location"
