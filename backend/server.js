@@ -1,10 +1,13 @@
-const express = require('express')
+const express = require('express');
+const exerciseRoute = require('./route/exercise.js');
+const userRoute = require('./route/user.js');
+
 const app = express()
 const port = 3000
 app.get('/', (req, res) => {
   res.send('hello world!')
 })
-app.delet('/collage', (req, res) => {
+app.delete('/collage', (req, res) => {
     res.send('collage!')
   })
   app.get('/school', (req, res) => {
@@ -13,7 +16,8 @@ app.delet('/collage', (req, res) => {
   app.put('/village', (req, res) => {
     res.send('md naseem!')
   })
-
+  app.use('/exercise',exerciseRoute);
+  app.use('/user',userRoute);
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
